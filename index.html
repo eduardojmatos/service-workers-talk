@@ -1,394 +1,505 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+    <title>reveal.js - The HTML Presentation Framework</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/moon.css" id="theme">
+    <link rel="stylesheet" href="css/personalized.css">
+    <link rel="stylesheet" href="css/highlight/github.css">
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-		<script>
-			if( window.location.search.match( /print-pdf/gi ) ) {
-				var link = document.createElement( 'link' );
-				link.rel = 'stylesheet';
-				link.type = 'text/css';
-				link.href = 'css/print/pdf.css';
-				document.getElementsByTagName( 'head' )[0].appendChild( link );
-			}
-		</script>
-
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
-
-	<body>
-
-		<div class="reveal">
-
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
-				</section>
-
-				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
-				</section>
-
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  For those of you who like that sort of thing.
-						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="?#/themes">Default</a> -
-						<a href="?theme=sky#/themes">Sky</a> -
-						<a href="?theme=beige#/themes">Beige</a> -
-						<a href="?theme=simple#/themes">Simple</a> -
-						<a href="?theme=serif#/themes">Serif</a> -
-						<a href="?theme=night#/themes">Night</a> <br>
-						<a href="?theme=moon#/themes">Moon</a> -
-						<a href="?theme=solarized#/themes">Solarized</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<section data-background="#007777">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#007777"</code> on a slide to change the full page background to the given color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Repeated Image Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-				</section>
-
-				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
-					<h2>Background Transitions</h2>
-					<p>
-						Pass reveal.js the <code>backgroundTransition: 'slide'</code> config argument to make backgrounds slide rather than fade.
-					</p>
-				</section>
-
-				<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
-					<h2>Background Transition Override</h2>
-					<p>
-						You can override background transitions per slide by using <code>data-background-transition="slide"</code>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
       }
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+
+        <section>
+          <h1>ServiceWorkers</h1>
+          <h3>e o futuro das aplicações no seu browser</h3>
+        </section>
+
+        <section data-background="#fff">
+          <a class="image" href="https://www.twitter.com/eduardojmatos" target="_blank">
+            <img src="img/profile_img.jpg" />
+          </a>
+          <h3>Eduardo Matos</h3>
+          <p>
+            @eduardojmatos
+          </p>
+        </section>
+
+        <section data-background="#fff">
+          <img src="img/mustachelabs_600.png" class="no-border no-shadow" />
+          <h1>Laboratório de programação</h1>
+          <small class="fragment roll-in">*estamos contratando!</small>
+        </section>
+
+        <section data-background="img/poa.jpg">
+          <h1 class="text-shadow">POA é a <br/> San Francisco do Brasil!</h1>
+        </section>
+
+        <section data-background="img/workers.jpg">
+          <h1 class="fragment roll-in text-shadow">O que é um worker?</h1>
+        </section>
+
+        <section>
+          <p>
+            Primeira definição de Worker surgiu com o WebWorkers
+            <a href="http://www.html5rocks.com/en/tutorials/workers/basics/" class="fragment roll-in">http://www.html5rocks.com/en/tutorials/workers/basics/</a>
+          </p>
+        </section>
+
+        <section>
+          <h1>Browser executando tarefas sem bloquear a interface</h1>
+          <p>
+            Resumindo: scripts rodando em paralelo à pagina
+          </p>
+          <p>
+            EX: tarefas que exigem alto processamento
+          </p>
+        </section>
+
+        <section data-background="#fff">
+          <pre class="no-border no-shadow">
+            <code data-trim contenteditable class="javascript hljs">
+// main script
+var worker = new Worker('worker.js');
+
+worker.addEventListener('message', function(e) {
+  console.log('Worker diz: ', e.data);
+}, false);
+
+worker.postMessage('Oi, eu sou o Worker!');
+
+// worker.js
+self.addEventListener('message', function(e) {
+  self.postMessage(e.data);
+}, false);
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <img src="img/webworker_caniuse.png" />
+        </section>
+
+        <section>
+          <h1>Regras comuns de um Worker</h1>
+          <ul>
+            <li class="fragment">Não acessa o DOM</li>
+            <li class="fragment">Não acessa o <code>window</code></li>
+            <li class="fragment">Não acessa o <code>document</code></li>
+            <li class="fragment">Acessa o <code>navigator</code></li>
+            <li class="fragment">Acessa o <code>location (ready-only)</code></li>
+          </ul>
+        </section>
+
+        <section>
+          <h1>E o ServiceWorkers?</h1>
+        </section>
+
+        <section>
+          <ul>
+            <li>
+              Usa o mesmo conceito do WebWorker de isolar execução de um script
+            </li>
+            <li class="fragment">
+              Controla programaticamente o cache da sua aplicação
+            </li>
+            <li class="fragment">
+              Serve como um proxy da sua aplicação
+            </li>
+            <li class="fragment">
+              [futuramente] BackgroundSync (!!)
+            </li>
+            <li class="fragment">
+              [futuramente] Geofencing (!!!)
+            </li>
+            <li class="fragment">
+              [futuramente] Push Notifications (!!!!)
+            </li>
+            <li class="fragment">
+              [futuramente] Bluetooth (!!!!!)
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <img src="img/service_workers_spec.png" />
+        </section>
+
+        <section>
+          <h1>Offline control</h1>
+        </section>
+
+        <section data-background="img/090611_work_offline1.jpg">
+        </section>
+
+        <section data-background="#fff">
+          <img src="img/captain_planet.jpg" />
+          <h1 class="fragment">Vai Application Cache!</h1>
+        </section>
+
+        <section>
+          <p>
+            A forma de cachear arquivos parecia simples...
+          </p>
+          <a href="http://diveintohtml5.info/offline.html">http://diveintohtml5.info/offline.html</a>
+        </section>
+
+        <section data-background="#0fffa0">
+          <img src="img/fail_captain_planet.jpg" />
+        </section>
+
+        <section>
+          <img src="img/noooo.gif" />
+          <h1>AppCache is a douchebag!</h1>
+          <a href="http://alistapart.com/article/application-cache-is-a-douchebag">http://alistapart.com/article/application-cache-is-a-douchebag</a>
+          <a href="http://sergiolopes.org/palestra-appcache-html5-offline/#slide-capa">http://sergiolopes.org/palestra-appcache-html5-offline</a>
+          <a href="http://eduardomatos.me/appcache-manifest-e-serviceworker-as-partes-boas-e-ruins">http://eduardomatos.me/appcache-manifest-e-serviceworker-as-partes-boas-e-ruins</a>
+        </section>
+
+        <section>
+          <h1>Lá vem o ServiceWorkers</h1>
+        </section>
+
+        <section>
+          <img src="img/keep-calm-cause-lá-vem-o-marcos.png" />
+        </section>
+
+        <section data-background="#fff">
+          <pre class="no-border no-shadow">
+            <code data-trim contenteditable class="javascript hljs">
+// main script
+navigator.serviceWorker.register("/assets/worker.js").then(
+  function ( serviceWorker ) {
+      serviceWorker.postMessage("ServiceWorkers instalado com sucesso.");
+  },
+  function ( error ) {
+      console.error("Ops.. não rolou a instalação do ServiceWorkers", error);
+  });
+            </code>
+          </pre>
+        </section>
+
+        <section>
+
+          <section data-background="#fff">
+            <p>
+              Interceptando requests
+            </p>
+            <pre class="no-border no-shadow">
+              <code data-trim contenteditable style="min-height: 500px" class="javascript hljs">
+  // assets/worker.js
+  var base = "https://meu.server.com";
+
+  var data_url = new URL("/data/posts.json", base) + "";
+
+  self.addEventListener("fetch", function(e) {
+    var url = e.request.url;
+    console.log(url);
+    if (url == data_url) {
+      e.respondWith(
+        new Response(JSON.stringify({
+          posts: { /* ... */ }
+        }), {
+          headers: { 'Content-Type': 'application/json' },
+          status: 200
+        })
+      );
     }
-  }
-}
-					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
+  });
+              </code>
+            </pre>
+          </section>
 
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
+          <section>
+            <img src="img/sw_requests.png" />
+          </section>
 
-				<section>
-					<section id="fragments">
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
+        </section>
 
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-current-blue">highlight-current-blue</p>
-					</section>
-				</section>
+        <section>
+          <img src="img/sw_graphic_01.png" />
+        </section>
 
-				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-					</a>
-				</section>
+        <section data-background="#fff">
+          <p>
+            Cacheando seus assets
+          </p>
+          <pre class="no-border no-shadow">
+            <code data-trim contenteditable style="min-height: 450px" class="javascript hljs">
+// assets/worker.js
+self.version = 1;
 
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-					<script>
-						document.getElementById('slideshare').attributeName = 'allowfullscreen';
-					</script>
-				</section>
+var base = "https://meu.server.com"
 
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
-					</p>
-				</section>
+// Listener para a instalação do ServiceWorkers
+self.addEventListener("install", function ( e ) {
+    var myResources = new Cache (
+        base + "/index.html",
+        base + "/assets/application.css",
+        base + "/assets/application.js",
+        base + "/assets/logo.png",
+        base + "/data/posts.json",
+        base + "/data/posts_fallback.json"
+    );
 
-				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="http://slid.es">Try the online editor</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
-				</section>
+    e.waitUntil(myResources.ready());
+    caches.set("caches-" + self.version, myResources);
+});
+            </code>
+          </pre>
+        </section>
 
-				<section>
-					<h1>THE END</h1>
-					<h3>BY Hakim El Hattab / hakim.se</h3>
-				</section>
+        <section data-background="#fff">
+          <p>
+            Request + Cache
+          </p>
+          <pre class="no-border no-shadow">
+            <code data-trim contenteditable style="min-height: 550px; font-size: 1.1em;" class="javascript hljs">
+// assets/worker.js
+self.version = 2;
 
-			</div>
+var base = "https://meu.server.com"
+var data_url = new URL("/data/posts.json", base) + "";
 
-		</div>
+self.addEventListener("fetch",
+    function ( e ) {
+        if (e.request.url == data_url) {
+          e.respondWith(
+            caches.match( e.request )
+                .catch( function () {
+                    return e.default;
+                })
+                .catch( function () {
+                    return caches.match("/data/posts_fallback.json");
+                })
+          );
+        }
+    }
+);
+            </code>
+          </pre>
+        </section>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+        <section>
 
-		<script>
+          <section>
+            <img src="img/sw_graphic_02.png" />
+          </section>
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+          <section>
+            <img src="img/sw_graphic_03.png" />
+          </section>
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+        </section>
 
-				// Parallax scrolling
-				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				// parallaxBackgroundSize: '2100px 900px',
+        <section>
+          <h1>Exemplo de ServiceWorkers</h1>
+          <a href="https://jakearchibald.github.io/trained-to-thrill/">https://jakearchibald.github.io/trained-to-thrill/</a>
+        </section>
 
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
+        <section>
+          <h1>E a segurança disso?</h1>
 
-		</script>
+          <ul class="fragment">
+            <li>
+              Funciona apenas com https
+            </li>
+            <li>
+              Escopo por domains
+            </li>
+          </ul>
+        </section>
 
-	</body>
+        <section>
+          <h1>BACKGROUND SYNC</h1>
+          <p>
+            Ainda muito recente
+          </p>
+        </section>
+
+        <section>
+
+          <section data-background="#fff">
+            <pre class="no-border no-shadow">
+              <code data-trim contenteditable style="min-height: 650px" class="javascript hljs">
+// main script
+navigator.serviceWorker.register("/assets/worker.js");
+
+navigator.serviceWorker.ready.then(function (sw) {
+  // Returns a Promise
+  navigator.sync.register(
+    "my_data_sync",
+    {
+      minInterval: 86400 * 1000,       // ms, default: heuristic
+      repeating: true,                 // default: false
+      data: '',                        // default: empty string
+      description: '',                 // default: empty string
+      lang: '',                        // default: document lang
+      dir: ''                          // default: document dir
+    }
+  ).then(function() { // Success
+       // No resolved value
+       // Success, sync is now registered
+     },
+     function() { // Failure
+       // If no SW registration
+       // User/UA denied permission
+       // Sync id already registered
+     });
+});
+              </code>
+            </pre>
+          </section>
+
+          <section data-background="#fff">
+            <pre class="no-border no-shadow">
+              <code data-trim contenteditable class="javascript hljs">
+  // assets/worker.js
+  self.onsync = function(event) {
+    var data = JSON.parse(event.data);
+
+    if (event.id === "my_data_sync") {
+      if (data.whatever === "foo") {
+        // rejection is indication that the UA should try
+        // later (especially when network is ok)
+        event.waitUntil(doAsyncStuff());
+      }
+    } else {
+      // Garbage collect unknown syncs (perhaps from older pages).
+      navigator.sync.unregister(event.id);
+    }
+  };
+              </code>
+            </pre>
+
+          </section>
+
+        </section>
+
+        <section>
+          <h1>Geofencing</h1>
+
+          <p>
+            Nem a spec foi definida.
+          </p>
+        </section>
+
+        <section>
+          <h1>Bluetooth</h1>
+          <p>
+            Spec ainda engatinhando
+          </p>
+          <a href="https://github.com/WebBluetoothCG/web-bluetooth">https://github.com/WebBluetoothCG/web-bluetooth</a>
+          <a href="http://www.w3.org/community/web-bluetooth/">http://www.w3.org/community/web-bluetooth</a>
+        </section>
+
+        <section data-background="#102a48">
+          <h1>Onde funciona?</h1>
+          <a href="https://jakearchibald.github.io/isserviceworkerready/">https://jakearchibald.github.io/isserviceworkerready/</a>
+          <img src="img/sw_isready.png" class="no-border" />
+        </section>
+
+        <section>
+          <h1>Porque esse hype todo?</h1>
+
+          <ul>
+            <li class="fragment">JavaScript chegando no app nativo</li>
+            <li class="fragment">Evolução e maior controle das aplicações</li>
+            <li class="fragment">Acesso a funcionalidades do sistema do usuário (bluetooth, push notifications...)</li>
+          </ul>
+        </section>
+
+        <section data-background="#fff">
+          <img src="img/no_laughing.gif" />
+          <h1>Obrigado!</h1>
+
+          <p>
+            link da palestra:
+            <a href="http://bit.ly/serviceworkers-tdc2014">http://bit.ly/serviceworkers-tdc2014</a>
+          </p>
+
+          <p>
+            meu twitter: <a href="https://www.twitter.com/eduardojmatos">@eduardojmatos</a>
+          </p>
+
+          <p>
+            fontes:
+            <a href="http://bit.ly/serviceworkers-links">http://bit.ly/serviceworkers-links</a>
+          </p>
+        </section>
+
+      </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: false,
+        history: true,
+        center: true,
+        slideNumber: false,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'img/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+  </body>
 </html>
